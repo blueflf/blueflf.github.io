@@ -16,7 +16,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/11/12/HTML/index.html">
 <meta property="og:site_name" content="方林峰的个人博客">
 <meta property="og:description" content="ajax">
-<meta property="og:updated_time" content="2017-11-12T08:03:16.210Z">
+<meta property="og:updated_time" content="2017-11-12T08:29:23.944Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ajax">
 <meta name="twitter:description" content="ajax">
@@ -203,7 +203,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.ajax是什么?<br>简单的来说ajax就是一种在不刷新页面的情况下向服务器发送请求,并接收响应数据的技术.</p>
+        <p>1.ajax是什么?<br>简单的来说ajax就是一种在不刷新页面的情况下向服务器发送请求,并接收响应数据的技术.<br>2.怎么用ajax发送请求接收数据(原生)<br>    1)创建ajax引擎<br>        var ajax = new XMLHttpRequest();<br>    2)构建请求<br>        ajax.open(‘请求方式’,’请求的url地址’);<br>    3)发送请求<br>        ajax.send();<br>    4)监听事件接收服务器端的响应数据<br>        ajax.onreadystatechange=function(){<br>            if(ajax.readyState==4 $$ ajax.status == 200){<br>                var data = ajax.responseText;<br>            }<br>        }</p>
 
       
     </div>
