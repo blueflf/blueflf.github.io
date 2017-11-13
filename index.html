@@ -151,6 +151,103 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-webpack" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/11/13/webpack/" class="article-date">
+  	<time datetime="2017-11-13T12:38:57.000Z" itemprop="datePublished">2017-11-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/13/webpack/">
+        webpack
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="webpack初步的搭建与配置"><a href="#webpack初步的搭建与配置" class="headerlink" title="webpack初步的搭建与配置"></a>webpack初步的搭建与配置</h1><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><blockquote>
+<h3 id="1-全局安装"><a href="#1-全局安装" class="headerlink" title="1.全局安装"></a><strong>1.全局安装</strong></h3><pre><code>cnpm i -g webpack
+</code></pre><h3 id="2-本地安装"><a href="#2-本地安装" class="headerlink" title="2.本地安装"></a><strong>2.本地安装</strong></h3><pre><code>cnpm i webpack --save-dev
+</code></pre><h3 id="3-开始打包"><a href="#3-开始打包" class="headerlink" title="3.开始打包"></a><strong>3.开始打包</strong></h3><pre><code>webpack ./main.js(主文件路径) bundle.js(出口文件路径)
+</code></pre><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="配置文件-webpack-config-js"><a href="#配置文件-webpack-config-js" class="headerlink" title="配置文件 webpack.config.js"></a><strong>配置文件 webpack.config.js</strong></h3><pre><code>1.引入webpack模块
+    var webpack = require(&apos;webpack&apos;);
+2.导出配置对象
+    //导出配置对象
+    module.exports={
+        //声明入口主文件
+        entry:&apos;./js/main.js&apos;,
+        //声明出口文件(最终生成的文件名)
+        output:{
+            //声明出口文件的路径
+            path: &apos;./output/&apos;,
+            //声明出口文件名
+            filename:&apos;bundle.js&apos;
+        },
+        //声明模块加载器
+        module:{
+            //声明具体的模块加载器
+            loaders:[
+                //css加载器:让所有的以.css结尾的文件都使用css加载器进行解析
+                {test:/\.css$/,loader:&apos;style-loader!css-loader&apos;},
+                {test:/\.less$/,loader:&apos;style!css!less&apos;}
+            ]
+        }
+    };
+</code></pre></blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
+	</div>
+
+      
+
+      
+        
+<div class="counter-tag counter">
+    <span id="/2017/11/13/webpack/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="webpack">
+         &nbsp;
+        view
+    </span>
+</div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-React" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">

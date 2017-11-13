@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>初步使用React | 方林峰的个人博客</title>
+  <title>webpack | 方林峰的个人博客</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="React环境搭建(yeoman脚手架) 1.全局安装yeoman使用cnpm i -g yo 2.全局安装react-webpackcnpm i -g generator-react-webpack 3.使用yo命令创建项目yo react-webpack 4.使用 npm start 启动项目npm start">
+  <meta name="description" content="webpack初步的搭建与配置环境搭建 1.全局安装cnpm i -g webpack 2.本地安装cnpm i webpack --save-dev 3.开始打包webpack ./main.js(主文件路径) bundle.js(出口文件路径) 配置配置文件 webpack.config.js1.引入webpack模块     var webpack = require(&amp;apos;webpa">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初步使用React">
-<meta property="og:url" content="http://yoursite.com/2017/11/13/React/index.html">
+<meta property="og:title" content="webpack">
+<meta property="og:url" content="http://yoursite.com/2017/11/13/webpack/index.html">
 <meta property="og:site_name" content="方林峰的个人博客">
-<meta property="og:description" content="React环境搭建(yeoman脚手架) 1.全局安装yeoman使用cnpm i -g yo 2.全局安装react-webpackcnpm i -g generator-react-webpack 3.使用yo命令创建项目yo react-webpack 4.使用 npm start 启动项目npm start">
-<meta property="og:updated_time" content="2017-11-13T12:33:04.205Z">
+<meta property="og:description" content="webpack初步的搭建与配置环境搭建 1.全局安装cnpm i -g webpack 2.本地安装cnpm i webpack --save-dev 3.开始打包webpack ./main.js(主文件路径) bundle.js(出口文件路径) 配置配置文件 webpack.config.js1.引入webpack模块     var webpack = require(&amp;apos;webpa">
+<meta property="og:updated_time" content="2017-11-13T12:57:20.308Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初步使用React">
-<meta name="twitter:description" content="React环境搭建(yeoman脚手架) 1.全局安装yeoman使用cnpm i -g yo 2.全局安装react-webpackcnpm i -g generator-react-webpack 3.使用yo命令创建项目yo react-webpack 4.使用 npm start 启动项目npm start">
+<meta name="twitter:title" content="webpack">
+<meta name="twitter:description" content="webpack初步的搭建与配置环境搭建 1.全局安装cnpm i -g webpack 2.本地安装cnpm i webpack --save-dev 3.开始打包webpack ./main.js(主文件路径) bundle.js(出口文件路径) 配置配置文件 webpack.config.js1.引入webpack模块     var webpack = require(&amp;apos;webpa">
   
     <link rel="alternative" href="/atom.xml" title="方林峰的个人博客" type="application/atom+xml">
   
@@ -154,11 +154,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><!--<article id="post-React" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><!--<article id="post-webpack" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/11/13/React/" class="article-date">
-  	<time datetime="2017-11-13T12:16:14.000Z" itemprop="datePublished">2017-11-13</time>
+      <a href="/2017/11/13/webpack/" class="article-date">
+  	<time datetime="2017-11-13T12:38:57.000Z" itemprop="datePublished">2017-11-13</time>
 </a>
     </div>
   
@@ -171,7 +171,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      初步使用React
+      webpack
       
     </h1>
   
@@ -189,8 +189,8 @@
         
           
 <div class="counter-tag counter">
-    <span id="/2017/11/13/React/" class="leancloud_visitors post-title-link"
-          style="font-size: 12px" data-flag-title="初步使用React">
+    <span id="/2017/11/13/webpack/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="webpack">
          &nbsp;
         view
     </span>
@@ -203,11 +203,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="React环境搭建-yeoman脚手架"><a href="#React环境搭建-yeoman脚手架" class="headerlink" title="React环境搭建(yeoman脚手架)"></a>React环境搭建(yeoman脚手架)</h1><blockquote>
-<h2 id="1-全局安装yeoman使用"><a href="#1-全局安装yeoman使用" class="headerlink" title="1.全局安装yeoman使用"></a>1.全局安装yeoman使用</h2><pre><code>cnpm i -g yo
-</code></pre><h2 id="2-全局安装react-webpack"><a href="#2-全局安装react-webpack" class="headerlink" title="2.全局安装react-webpack"></a>2.全局安装react-webpack</h2><pre><code>cnpm i -g generator-react-webpack
-</code></pre><h2 id="3-使用yo命令创建项目"><a href="#3-使用yo命令创建项目" class="headerlink" title="3.使用yo命令创建项目"></a>3.使用yo命令创建项目</h2><pre><code>yo react-webpack
-</code></pre><h2 id="4-使用-npm-start-启动项目"><a href="#4-使用-npm-start-启动项目" class="headerlink" title="4.使用 npm start 启动项目"></a>4.使用 npm start 启动项目</h2><pre><code>npm start
+        <h1 id="webpack初步的搭建与配置"><a href="#webpack初步的搭建与配置" class="headerlink" title="webpack初步的搭建与配置"></a>webpack初步的搭建与配置</h1><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><blockquote>
+<h3 id="1-全局安装"><a href="#1-全局安装" class="headerlink" title="1.全局安装"></a><strong>1.全局安装</strong></h3><pre><code>cnpm i -g webpack
+</code></pre><h3 id="2-本地安装"><a href="#2-本地安装" class="headerlink" title="2.本地安装"></a><strong>2.本地安装</strong></h3><pre><code>cnpm i webpack --save-dev
+</code></pre><h3 id="3-开始打包"><a href="#3-开始打包" class="headerlink" title="3.开始打包"></a><strong>3.开始打包</strong></h3><pre><code>webpack ./main.js(主文件路径) bundle.js(出口文件路径)
+</code></pre><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="配置文件-webpack-config-js"><a href="#配置文件-webpack-config-js" class="headerlink" title="配置文件 webpack.config.js"></a><strong>配置文件 webpack.config.js</strong></h3><pre><code>1.引入webpack模块
+    var webpack = require(&apos;webpack&apos;);
+2.导出配置对象
+    //导出配置对象
+    module.exports={
+        //声明入口主文件
+        entry:&apos;./js/main.js&apos;,
+        //声明出口文件(最终生成的文件名)
+        output:{
+            //声明出口文件的路径
+            path: &apos;./output/&apos;,
+            //声明出口文件名
+            filename:&apos;bundle.js&apos;
+        },
+        //声明模块加载器
+        module:{
+            //声明具体的模块加载器
+            loaders:[
+                //css加载器:让所有的以.css结尾的文件都使用css加载器进行解析
+                {test:/\.css$/,loader:&apos;style-loader!css-loader&apos;},
+                {test:/\.less$/,loader:&apos;style!css!less&apos;}
+            ]
+        }
+    };
 </code></pre></blockquote>
 
       
@@ -218,18 +241,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/11/13/webpack/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">&lt;</strong>
-      <div class="article-nav-title">
-        
-          webpack
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/11/12/HTML/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">ajax</div>
+    <a href="/2017/11/13/React/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">初步使用React</div>
       <strong class="article-nav-caption">&gt;</strong>
     </a>
   
@@ -239,7 +253,7 @@
 </article>
 
 
-<div class="ds-share share" data-thread-key="React" data-title="初步使用React" data-url="http://yoursite.com/2017/11/13/React/"  data-images="/img/heade.jpg" data-content="初步使用React">
+<div class="ds-share share" data-thread-key="webpack" data-title="webpack" data-url="http://yoursite.com/2017/11/13/webpack/"  data-images="/img/heade.jpg" data-content="webpack">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
       	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
