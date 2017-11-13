@@ -3,18 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: JavaScript | 方林峰的个人博客</title>
+  <title>初步使用React | 方林峰的个人博客</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="方林峰的个人博客">
-<meta property="og:url" content="http://yoursite.com/tags/JavaScript/index.html">
+  <meta name="description" content="React环境搭建(yeoman脚手架) 1.全局安装yeoman使用cnpm i -g yo 2.全局安装react-webpackcnpm i -g generator-react-webpack 3.使用yo命令创建项目yo react-webpack 4.使用 npm start 启动项目npm start">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初步使用React">
+<meta property="og:url" content="http://yoursite.com/2017/11/13/React/index.html">
 <meta property="og:site_name" content="方林峰的个人博客">
+<meta property="og:description" content="React环境搭建(yeoman脚手架) 1.全局安装yeoman使用cnpm i -g yo 2.全局安装react-webpackcnpm i -g generator-react-webpack 3.使用yo命令创建项目yo react-webpack 4.使用 npm start 启动项目npm start">
+<meta property="og:updated_time" content="2017-11-13T12:33:04.205Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="方林峰的个人博客">
+<meta name="twitter:title" content="初步使用React">
+<meta name="twitter:description" content="React环境搭建(yeoman脚手架) 1.全局安装yeoman使用cnpm i -g yo 2.全局安装react-webpackcnpm i -g generator-react-webpack 3.使用yo命令创建项目yo react-webpack 4.使用 npm start 启动项目npm start">
   
     <link rel="alternative" href="/atom.xml" title="方林峰的个人博客" type="application/atom+xml">
   
@@ -149,47 +154,40 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><!--<article id="post-React" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/13/React/" class="archive-article-date">
-  	<time datetime="2017-11-13T12:16:14.000Z" itemprop="datePublished">Nov 13</time>
+    <div class="article-meta">
+      <a href="/2017/11/13/React/" class="article-date">
+  	<time datetime="2017-11-13T12:16:14.000Z" itemprop="datePublished">2017-11-13</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/React/">
-        初步使用React
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
-      </a>
+  
+    <h1 class="article-title" itemprop="name">
+      初步使用React
+      
     </h1>
   
 
-        <div class="article-info info-on-left">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
 	</div>
 
-          
+        
 
+        
           
-            
 <div class="counter-tag counter">
     <span id="/2017/11/13/React/" class="leancloud_visitors post-title-link"
           style="font-size: 12px" data-flag-title="初步使用React">
@@ -198,65 +196,60 @@
     </span>
 </div>
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/12/HTML/" class="archive-article-date">
-  	<time datetime="2017-11-12T06:48:35.000Z" itemprop="datePublished">Nov 12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/12/HTML/">
-        ajax
         
-      </a>
-    </h1>
-  
-
-        <div class="article-info info-on-left">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
-	</div>
-
-          
-
-          
-            
-<div class="counter-tag counter">
-    <span id="/2017/11/12/HTML/" class="leancloud_visitors post-title-link"
-          style="font-size: 12px" data-flag-title="ajax">
-         &nbsp;
-        view
-    </span>
-</div>
-
-          
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="React环境搭建-yeoman脚手架"><a href="#React环境搭建-yeoman脚手架" class="headerlink" title="React环境搭建(yeoman脚手架)"></a>React环境搭建(yeoman脚手架)</h1><blockquote>
+<h2 id="1-全局安装yeoman使用"><a href="#1-全局安装yeoman使用" class="headerlink" title="1.全局安装yeoman使用"></a>1.全局安装yeoman使用</h2><pre><code>cnpm i -g yo
+</code></pre><h2 id="2-全局安装react-webpack"><a href="#2-全局安装react-webpack" class="headerlink" title="2.全局安装react-webpack"></a>2.全局安装react-webpack</h2><pre><code>cnpm i -g generator-react-webpack
+</code></pre><h2 id="3-使用yo命令创建项目"><a href="#3-使用yo命令创建项目" class="headerlink" title="3.使用yo命令创建项目"></a>3.使用yo命令创建项目</h2><pre><code>yo react-webpack
+</code></pre><h2 id="4-使用-npm-start-启动项目"><a href="#4-使用-npm-start-启动项目" class="headerlink" title="4.使用 npm start 启动项目"></a>4.使用 npm start 启动项目</h2><pre><code>npm start
+</code></pre></blockquote>
 
-</div>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/12/HTML/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ajax</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="React" data-title="初步使用React" data-url="http://yoursite.com/2017/11/13/React/"  data-images="/img/heade.jpg" data-content="初步使用React">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+--></div>
       <footer id="footer">
   <div class="outer">
     <div id="footer-info">
@@ -277,9 +270,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}

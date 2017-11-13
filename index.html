@@ -103,7 +103,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/javascript/" style="font-size: 10px;">javascript</a>
+						<a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a>
 					</div>
 				</section>
 				
@@ -151,6 +151,80 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-React" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/11/13/React/" class="article-date">
+  	<time datetime="2017-11-13T12:16:14.000Z" itemprop="datePublished">2017-11-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/13/React/">
+        初步使用React
+        
+      </a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="React环境搭建-yeoman脚手架"><a href="#React环境搭建-yeoman脚手架" class="headerlink" title="React环境搭建(yeoman脚手架)"></a>React环境搭建(yeoman脚手架)</h1><blockquote>
+<h2 id="1-全局安装yeoman使用"><a href="#1-全局安装yeoman使用" class="headerlink" title="1.全局安装yeoman使用"></a>1.全局安装yeoman使用</h2><pre><code>cnpm i -g yo
+</code></pre><h2 id="2-全局安装react-webpack"><a href="#2-全局安装react-webpack" class="headerlink" title="2.全局安装react-webpack"></a>2.全局安装react-webpack</h2><pre><code>cnpm i -g generator-react-webpack
+</code></pre><h2 id="3-使用yo命令创建项目"><a href="#3-使用yo命令创建项目" class="headerlink" title="3.使用yo命令创建项目"></a>3.使用yo命令创建项目</h2><pre><code>yo react-webpack
+</code></pre><h2 id="4-使用-npm-start-启动项目"><a href="#4-使用-npm-start-启动项目" class="headerlink" title="4.使用 npm start 启动项目"></a>4.使用 npm start 启动项目</h2><pre><code>npm start
+</code></pre></blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
+	</div>
+
+      
+
+      
+        
+<div class="counter-tag counter">
+    <span id="/2017/11/13/React/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="初步使用React">
+         &nbsp;
+        view
+    </span>
+</div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+      
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-HTML" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -180,8 +254,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.ajax是什么?<br>简单的来说ajax就是一种在不刷新页面的情况下向服务器发送请求,并接收响应数据的技术.<br>2.怎么用ajax发送请求接收数据(原生)<br>    1)创建ajax引擎<br>        var ajax = new XMLHttpRequest();<br>    2)构建请求<br>        ajax.open(‘请求方式’,’请求的url地址’);<br>    3)发送请求<br>        ajax.send();<br>    4)监听事件接收服务器端的响应数据<br>        ajax.onreadystatechange=function(){<br>            if(ajax.readyState==4 $$ ajax.status == 200){<br>                var data = ajax.responseText;<br>            }<br>        }</p>
-
+        <h2 id="ajax是什么"><a href="#ajax是什么" class="headerlink" title="ajax是什么?"></a>ajax是什么?</h2><pre><code>简单的来说ajax就是一种在不刷新页面的情况下向服务器发送请求,并接收响应数据的技术.
+</code></pre><h2 id="怎么用ajax发送请求接收数据-原生"><a href="#怎么用ajax发送请求接收数据-原生" class="headerlink" title="怎么用ajax发送请求接收数据(原生)"></a>怎么用ajax发送请求接收数据(原生)</h2><pre><code>1)创建ajax引擎
+    var ajax = new XMLHttpRequest();
+2)构建请求
+    ajax.open(&apos;请求方式&apos;,&apos;请求的url地址&apos;);
+3)发送请求
+    ajax.send();
+4)监听事件接收服务器端的响应数据
+    &gt;ajax.onreadystatechange=function(){
+        if(ajax.readyState==4 $$ ajax.status == 200){
+            var data = ajax.responseText;
+        }
+    }
+</code></pre>
       
     </div>
     
@@ -189,7 +275,7 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
 	</div>
 
       
