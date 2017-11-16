@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>webpack | 方林峰的个人博客</title>
+  <title>继承 | 方林峰的个人博客</title>
 
   <!-- keywords -->
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="webpack初步的搭建与配置">
+  <meta name="description" content="继承写法">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webpack">
-<meta property="og:url" content="http://yoursite.com/2017/11/13/webpack/index.html">
+<meta property="og:title" content="继承">
+<meta property="og:url" content="http://yoursite.com/2016/11/14/继承/index.html">
 <meta property="og:site_name" content="方林峰的个人博客">
-<meta property="og:description" content="webpack初步的搭建与配置">
-<meta property="og:updated_time" content="2017-11-14T06:24:08.196Z">
+<meta property="og:description" content="继承写法">
+<meta property="og:updated_time" content="2017-11-16T12:37:10.876Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webpack">
-<meta name="twitter:description" content="webpack初步的搭建与配置">
+<meta name="twitter:title" content="继承">
+<meta name="twitter:description" content="继承写法">
   
     <link rel="alternative" href="/atom.xml" title="方林峰的个人博客" type="application/atom+xml">
   
@@ -154,11 +154,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-webpack" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-继承" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/11/13/webpack/" class="article-date">
-  	<time datetime="2017-11-13T12:38:57.000Z" itemprop="datePublished">2017-11-13</time>
+      <a href="/2016/11/14/继承/" class="article-date">
+  	<time datetime="2016-11-14T12:06:16.000Z" itemprop="datePublished">2016-11-14</time>
 </a>
     </div>
   
@@ -171,7 +171,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      webpack
+      继承
       
     </h1>
   
@@ -189,8 +189,8 @@
         
           
 <div class="counter-tag counter">
-    <span id="/2017/11/13/webpack/" class="leancloud_visitors post-title-link"
-          style="font-size: 12px" data-flag-title="webpack">
+    <span id="/2016/11/14/继承/" class="leancloud_visitors post-title-link"
+          style="font-size: 12px" data-flag-title="继承">
          &nbsp;
         view
     </span>
@@ -203,36 +203,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="webpack初步的搭建与配置"><a href="#webpack初步的搭建与配置" class="headerlink" title="webpack初步的搭建与配置"></a>webpack初步的搭建与配置</h1><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><blockquote>
-<h3 id="1-全局安装"><a href="#1-全局安装" class="headerlink" title="1.全局安装"></a><strong>1.全局安装</strong></h3><pre><code>cnpm i -g webpack
-</code></pre><h3 id="2-本地安装"><a href="#2-本地安装" class="headerlink" title="2.本地安装"></a><strong>2.本地安装</strong></h3><pre><code>cnpm i webpack --save-dev
-</code></pre><h3 id="3-开始打包"><a href="#3-开始打包" class="headerlink" title="3.开始打包"></a><strong>3.开始打包</strong></h3><pre><code>webpack ./main.js(主文件路径) bundle.js(出口文件路径)
-</code></pre><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="配置文件-webpack-config-js"><a href="#配置文件-webpack-config-js" class="headerlink" title="配置文件 webpack.config.js"></a><strong>配置文件 webpack.config.js</strong></h3><pre><code>1.引入webpack模块
-    var webpack = require(&apos;webpack&apos;);
-2.导出配置对象
-    //导出配置对象
-    module.exports={
-        //声明入口主文件
-        entry:&apos;./js/main.js&apos;,
-        //声明出口文件(最终生成的文件名)
-        output:{
-            //声明出口文件的路径
-            path: &apos;./output/&apos;,
-            //声明出口文件名
-            filename:&apos;bundle.js&apos;
-        },
-        //声明模块加载器
-        module:{
-            //声明具体的模块加载器
-            loaders:[
-                //css加载器:让所有的以.css结尾的文件都使用css加载器进行解析
-                {test:/\.css$/,loader:&apos;style-loader!css-loader&apos;},
-                {test:/\.less$/,loader:&apos;style!css!less&apos;}
-            ]
-        }
-    };
-</code></pre></blockquote>
+        <h2 id="ES5的继承写法"><a href="#ES5的继承写法" class="headerlink" title="ES5的继承写法"></a><strong>ES5的继承写法</strong></h2><pre><code>//父类
+function Father(){
 
+
+}
+</code></pre>
       
     </div>
     
@@ -242,8 +218,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2017/11/13/React/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">初步使用React</div>
+    <a href="/2016/11/13/webpack/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">webpack</div>
       <strong class="article-nav-caption">&gt;</strong>
     </a>
   
@@ -253,7 +229,7 @@
 </article>
 
 
-<div class="ds-share share" data-thread-key="webpack" data-title="webpack" data-url="http://yoursite.com/2017/11/13/webpack/"  data-images="/img/heade.jpg" data-content="webpack">
+<div class="ds-share share" data-thread-key="继承" data-title="继承" data-url="http://yoursite.com/2016/11/14/继承/"  data-images="/img/heade.jpg" data-content="继承">
     <div class="ds-share-inline">
       <ul  class="ds-share-icons-16">
       	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
@@ -279,7 +255,7 @@
       <div class="footer-left">
         &copy; 2017 方林峰
       </div>
-       
+
     </div>
   </div>
 </footer>
