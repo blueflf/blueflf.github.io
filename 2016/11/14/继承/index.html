@@ -16,7 +16,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/11/14/继承/index.html">
 <meta property="og:site_name" content="方林峰的个人博客">
 <meta property="og:description" content="继承写法">
-<meta property="og:updated_time" content="2017-11-16T12:37:10.876Z">
+<meta property="og:updated_time" content="2017-11-16T12:56:37.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="继承">
 <meta name="twitter:description" content="继承写法">
@@ -205,8 +205,30 @@
       
         <h2 id="ES5的继承写法"><a href="#ES5的继承写法" class="headerlink" title="ES5的继承写法"></a><strong>ES5的继承写法</strong></h2><pre><code>//父类
 function Father(){
-
-
+    //相应的属性代码
+}
+//父类的原型方法
+Father.prototype.show=function(){
+    //方法代码
+}
+//子类
+function Son(){
+     //继承第一句:让子类拥有父类的属性
+     Father.apply(this,arguments);
+    //子类相应的属性代码
+}
+//继承第二句:子类继承父类的原型方法
+Son.prototype=Object.create(Father.prototype);
+//继承第三句:找回丢失的构造函数
+Son.prototype.constructor=Son;
+//子类的原型方法
+Son.prototype.run=function(){
+    //方法代码
+}
+</code></pre><h2 id="ES6的继承写法"><a href="#ES6的继承写法" class="headerlink" title="ES6的继承写法"></a><strong>ES6的继承写法</strong></h2><pre><code>class Son extends Father{
+    constructor(){
+        super();
+    }
 }
 </code></pre>
       
